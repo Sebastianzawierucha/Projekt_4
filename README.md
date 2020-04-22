@@ -15,6 +15,7 @@ Dodano obsługę wyjątku NumberFormatException, który występuje, kiedy: wprow
 
 Zadanie 4:
 Została przekonstruowana wypożyczalnia z repozytorium Projekt-2_poprawiony. W wypożyczalni obsługa klientów, poprzednio realizowana m.in. przez dziedziczenie została zastąpiona w całości przez idee kompozycji. W porównaniu do poprzedniej realizacji, klasa Klient nie dziedziczy po klasie nadrzędnej Klientbase, tylko tworzy w klasie Klient instancje klasy Klientbase. Razem ze zmiennymi klasy Klientbase klasa Klient otrzymuje również metody odpowiadające klasie Klientbase. W klasie Klient, porównując z poprzednią wersją wypożyczalni, musiały się pojawić dodatkowo deklaracje zmiennych otrzymywanych z klasy Klientbase oraz metody z niej wynikające.
+Zmieniły się tylko klasy Start, Listaklientow, Klientbase, Klient. Reszta jest bez zmian i realizuje zamysł dziedziczenia i kompozycji.
 Poza skomplikowaniem projektu, tym, że nie działa poprawnie dodawanie klienta do listy klientów oraz zmniejszeniem czytelności kodu nie zmieniło to nic. Rozumiem idee kompozycji, wiem do czego to służy ale w tym przypadku jest to zbędne, ponieważ:
 1) program jest zbyt prosty
 2) program jest tworzony na potrzeby nauki programowania a nie faktyczne tworzenie funkcjonalnej wypożyczalni
