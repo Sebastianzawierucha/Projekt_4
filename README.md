@@ -14,4 +14,9 @@ Zaprojektowano prosty program, który konewertuje podaną liczbę, zapisaną jak
 Dodano obsługę wyjątku NumberFormatException, który występuje, kiedy: wprowadzona zmienna String jest pusta, wprowadzona zmienna nie może być przekonwertowana do typu int.
 
 Zadanie 4:
-Bazując na instrukcji mogę stwierdzić, że zamysł kompozycji wykorzystałem w projekcie drugim. W związku z tym, bezcelowym byłoby przerabianie go. Kod projektu drugiego znajduje się w repozytorium Projekt 2 - poprawiony.
+Została przekonstruowana wypożyczalnia z repozytorium Projekt-2_poprawiony. W wypożyczalni obsługa klientów, poprzednio realizowana m.in. przez dziedziczenie została zastąpiona w całości przez idee kompozycji. W porównaniu do poprzedniej realizacji, klasa Klient nie dziedziczy po klasie nadrzędnej Klientbase, tylko tworzy w klasie Klient instancje klasy Klientbase. Razem ze zmiennymi klasy Klientbase klasa Klient otrzymuje również metody odpowiadające klasie Klientbase. W klasie Klient, porównując z poprzednią wersją wypożyczalni, musiały się pojawić dodatkowo deklaracje zmiennych otrzymywanych z klasy Klientbase oraz metody z niej wynikające.
+Poza skomplikowaniem projektu, tym, że nie działa poprawnie dodawanie klienta do listy klientów oraz zmniejszeniem czytelności kodu nie zmieniło to nic. Rozumiem idee kompozycji, wiem do czego to służy ale w tym przypadku jest to zbędne, ponieważ:
+1) program jest zbyt prosty
+2) program jest tworzony na potrzeby nauki programowania a nie faktyczne tworzenie funkcjonalnej wypożyczalni
+3) program nie będzie w przyszłości rozwijany
+są to główne powody, przez które taka zmiana jest bezsensowna. Gdyby projekt wypożyczalni byłby w przyszłości rozbudowywany zmiana nawet całego kodu z idei dziedziczenia na idee kompozycji byłaby zasadna, bezpieczniejsza i prostsza w obsłudze. 
